@@ -1,4 +1,11 @@
-<html>
-    <head></head>
-    <body>Hello world!</body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div>
+            <p>publicado em {{post.published_date}}</p>
+            <h1>{{post.title}}</h1>
+            <p>{{post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
