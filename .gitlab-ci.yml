@@ -1,3 +1,12 @@
+image: python:latest
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
+  
+cache:
+  paths:
+    - .cache/pip
+    - venv/
 
 before_script:
   - python -V               # Print out python version for debugging
