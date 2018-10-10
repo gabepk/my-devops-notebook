@@ -1,9 +1,3 @@
-image: python:latest
-
-variables:
-  NOME_TESTE: "TESTES django_girls"
-  NOME_RUN: "COMPILAÇÃO django_girls"
-
 
 before_script:
   - python -V               # Print out python version for debugging
@@ -13,15 +7,17 @@ before_script:
 
 test:
   script:
-  - echo "Rodando: $NOME_TESTE!"
+  #- python setup.py test
+  - pip install tox flake8  # you can also use tox
+  - tox -e py36,flake8
 
 run:
   script:
-  - echo "Rodando: $NOME_RUN!"
   #- python setup.py bdist_wheel
   # an alternative approach is to install and run:
-  #- pip install dist/*
+  - pip install dist/*
   # run the command here
   #artifacts:
-  #  paths:
-  #  - dist/*.whl
+    #paths:
+    #- dist/*.whl
+
