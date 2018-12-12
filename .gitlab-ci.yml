@@ -5,27 +5,25 @@ variables:
   
 cache:
   paths:
-    - .cache/pip
+    #- .cache/pip
     - venv/
 
 before_script:
-  - python -V               # Print out python version for debugging
+  - python -V
   - pip install virtualenv
   - virtualenv venv
   - source venv/bin/activate
 
 test:
   script:
-  # this configures Django application to use attached postgres database that is run on `postgres` host
-  - export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
-  - apt-get update -qy
-  - apt-get install -y python-dev python-pip
+  #- apt-get update -qy
+  #- apt-get install -y python-dev python-pip
   - pip install -r requirements.txt
   - python manage.py test
 
-staging:
-  type: deploy
-  script:
+#staging:
+#  type: deploy
+#  script:
   - apt-get update -qy
   - apt-get install -y ruby-dev
   - gem install dpl
