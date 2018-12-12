@@ -16,15 +16,34 @@ before_script:
 
 test:
   script:
+  # this configures Django application to use attached postgres database that is run on `postgres` host
+  - export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
+  - apt-get update -qy
+  - apt-get install -y python-dev python-pip
+  - pip install -r requirements.txt
+  - python manage.py test
+
+staging:
+  type: deploy
+  script:
+  - apt-get update -qy
+  - apt-get install -y ruby-dev
+  - gem install dpl
+  - dpl --provider=heroku --app=gitlab-ci-python-test-staging --api-key=$HEROKU_STAGING_API_KEY
+  only:
+  - master
+
+#test:
+  #script:
   #- python setup.py test
-  - pip install tox flake8  # you can also use tox
+  #- pip install tox flake8  # you can also use tox
   #- tox -e py36,flake8
 
-run:
-  script:
+#run:
+  #script:
   #- python setup.py bdist_wheel
   # an alternative approach is to install and run:
-  - pip install dist/*
+  #- pip install dist/*
   # run the command here
   #artifacts:
     #paths:
