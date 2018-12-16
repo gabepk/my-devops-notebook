@@ -9,7 +9,7 @@ Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/READM
 ## DevOps Roadmap 2019
 
 O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
-Eu *forkei* este gráfico de [Kamran Ahmedse] (https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento atual (Dezembro de 2018).
+Eu *forkei* este gráfico de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento atual (Dezembro de 2018).
 
 ![Mapa do DevOps](./staticfiles/img/devops.png)
 
