@@ -4,7 +4,7 @@ Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/READM
 
 [Blog](https://gabepk-blog.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
 
-<sub>Este blog foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart:</ sub>
+<sub>Este blog foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
 
 ## DevOps Roadmap 2019
 
