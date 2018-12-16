@@ -1,8 +1,16 @@
-[Staging app](https://gabepk-blog.herokuapp.com)
+English/[Português](https://gitlab.com/gabepk.ape/django-blog/blob/master/README.pt.md)
 
-﻿#Tutorial Django Girls 2018#
+# My DevOps blog
 
-O que precisa mudar no tutorial oficial:
-1) Criar .gitignore
-2) Adicionar myvenv no .gitignore
-3) Fazer checkout do projeto no pythonanywhere antes do pull
+[Blog](https://gabepk-blog.herokuapp.com) implemented in Django to serve as a repository to my notes on DevOps concepts and tools.
+
+<sub>This blog was created at the [Django Girls](https://djangogirls.org/brasilia/) 2018 event, suported by the [PyLadies DF](http://df.pyladies.com/) organization :heart:</sub>
+
+## DevOps Roadmap 2019
+
+Below you find a chart of a roadmap to introduce DevOps to my dev team, demonstrating the paths that we can take and the technologies that we would want to adopt in order to adopt devops. 
+I forked this chart from [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) and shaped according to my current knowledge (December, 2018).
+
+![DevOps Roadmap](./staticfiles/img/devops.png)
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
