@@ -9,7 +9,7 @@ English/[Português](https://gitlab.com/gabepk.ape/django-blog/blob/master/READM
 ## DevOps Roadmap 2019
 
 Below you find a chart of a roadmap to introduce DevOps to my dev team, demonstrating the paths that we can take and the technologies that we would want to adopt in order to adopt devops. 
-I forked this chart from [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) and shaped according to my current knowledge (December, 2018).
+I forked this chart (a [Balsamiq](https://balsamiq.com/) project) from [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) and shaped according to my current knowledge (December, 2018).
 
 ![DevOps Roadmap](./staticfiles/img/devops.png)
 
