@@ -1,0 +1,50 @@
+rect {
+    fill: #fff !important;
+    stroke: none !important;
+}
+svg {
+    height: auto !important;
+}
+svg:not(:root) {
+    overflow: visible;
+}
+foreignObject div {
+    background-color: #ff9400;
+    padding: 5px 4px;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+foreignObject div:hover {
+    box-shadow: 1px 1px 2px 0px #888;
+    background-color: #ffd844;
+    cursor: pointer;
+}
+.mermaid {
+    width: 100%;
+}
+.mermaid .label {
+    font-family: cursive !important;
+}
+.edgePath .path {
+    stroke: #000 !important;
+}
+g.cluster rect {
+    fill: #ccc !important;
+    stroke: none !important;;
+}
+.arrowheadPath {
+    fill: #000 !important;
+}
+#endPoint {
+    font-size: 20px;
+}
+/*#startPoint rect, #endPoint rect {
+    fill: none;
+}
+[id^=step] rect {
+    fill: #ff9400 !important;
+}
+[id^=step] .label {
+    color: #fff !important;
+}*/

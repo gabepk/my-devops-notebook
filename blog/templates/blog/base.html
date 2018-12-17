@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/roadmap.css' %}">
     </head>
     <body>
         <div class="page-header">
@@ -16,6 +17,164 @@
 			-->
             <h1><a href="/">Gabepk - vim pelo gitlab s2</a></h1>
         </div>
+
+        <details class="roadmap-menu content">
+            <summary>Conteúdo</summary>
+            <details>
+                <summary><span>1</span> Programming language</summary>
+                <div class="mermaid">
+                    graph LR
+                    step1(Programming Language) -.-> step1_1(Java)
+                    step1 -.-> step1_2(JavaScript)
+
+                    click step1_2 "http://www.github.com"
+                </div>
+            </details>
+            <details>
+                <summary><span>2</span> OS Concepts</summary>
+                <div class="mermaid">
+                        graph LR
+                        step2(OS Concepts) -.-> step2_1(Process Management)
+                        step2 -.-> step2_2(Threads and Concurrency)
+                        step2 -.-> step2_3(Sockets)
+                        step2 -.-> step2_4(I/O Management)
+                        step2 -.-> step2_5(Virtualization)
+                        step2 -.-> step2_6(File System)
+                </div>
+            </details>
+            <details>
+                <summary><span>3</span> Operatin System</summary>
+                <div class="mermaid">
+                    graph LR
+                    step3(Managing Servers) --> step3_1(OS)
+                    subgraph Operatin System
+                        step3_1 -.-> step3_1_1(Linux)
+                        step3_1 -.-> step3_1_2(Windows)
+                    end
+                    step3 --> step3_2(Terminal)
+                    subgraph Learn to live in Terminal
+                        step3_2 -.-> step3_2_1(Learn Bash Scripting)
+                        step3_2 -.-> step3_2_2(Vim/Nano/PowerShell/Emacs)
+                        step3_2 -.-> step3_2_3(Compiling apps from src)
+                        step3_2 -.-> step3_2_4(Text Manipulation Tools - awk, grep, ...)
+                        step3_2 -.-> step3_2_5(Process Monitoring - ps, atop, ...)
+                        step3_2 -.-> step3_2_6(Network - nmap, mtr, ...)
+                    end
+                </div>
+            </details>
+            <details>
+                <summary><span>4</span> Networking and Security</summary>
+                <div class="mermaid">
+                    graph LR
+                    step4(Networking and Security) -.-> step4_1(DNS)
+                    step4 -.-> step4_2(OSI Model)
+                    step4 -.-> step4_3(HTTP)
+                    step4 -.-> step4_4(HTTPS)
+                    step4 -.-> step4_5(FTP)
+                    step4 -.-> step4_6(SSL/TLS)
+                </div>
+            </details>
+            <details>
+                <summary><span>5</span> What is and how to setup a _____</summary>
+                <div class="mermaid">
+                    graph LR
+                    step5(Setup) -.-> step5_1(Reverse Proxy)
+                    step5 -.-> step5_2(Forward Proxy)
+                    step5 -.-> step5_3(Coaching Server)
+                    step5 -.-> step5_4(Load Balancer)
+                    step5 -.-> step5_5(Firewall)
+                    step5 -.-> step5_6(Web)
+                    subgraph Web Server
+                        step5_6 -.-> step5_6_1(IIS)
+                        step5_6 -.-> step5_6_2(Apache)
+                        step5_6 -.-> step5_6_3(Nginx)
+                        step5_6 -.-> step5_6_4(Tomcat)
+                        step5_6 -.-> step5_6_5(Caddy)
+                    end
+                </div>
+            </details>
+            <details>
+                <summary><span>6</span> Learn Insfrastructure as Code</summary>
+                <div class="mermaid">
+                    graph LR
+                    step6(Insfra) --> step6_1(>>>)
+                    subgraph Containers
+                        step6_1 -.-> step6_1_1(Docker)
+                        step6_1 -.-> step6_1_2(rkt)
+                        step6_1 -.-> step6_1_3(LXC)
+                    end
+                    step6 --> step6_2(>>>)
+                    subgraph Configuration Management
+                        step6_2 -.-> step6_2_1(Ansible)
+                        step6_2 -.-> step6_2_2(Salt)
+                        step6_2 -.-> step6_2_3(Chef)
+                        step6_2 -.-> step6_2_4(Puppet)
+                    end
+                    step6 --> step6_3(>>>)
+                    subgraph Container Orchestration
+                        step6_3 -.-> step6_3_1(Kubernetes)
+                        step6_3 -.-> step6_3_2(Mesos)
+                        step6_3 -.-> step6_3_3(Docker Swarm)
+                        step6_3 -.-> step6_3_4(Nomad)
+                    end
+                    step6 --> step6_4(>>>)
+                    subgraph Infrastructure Provisioning
+                        step6_4 -.-> step6_4_1(Terrafomr)
+                        step6_4 -.-> step6_4_2(Cloud Formation)
+                    end
+                </div>
+            </details>
+            <details>
+                <summary><span>7</span> Learn some CI/DI Tool</summary>
+                <div class="mermaid">
+                    graph LR
+                    step7(Learn some CI/DI Tool) -.-> step7_1(Jenkins)
+                    step7 -.-> step7_2(Travis CI)
+                    step7 -.-> step7_3(Teamcity)
+                    step7 -.-> step7_4(Drone)
+                    step7 -.-> step7_5(Circle CI)
+                </div>
+            </details>
+            <details>
+                <summary><span>8</span> Learn how to monitor software and infrastructure</summary>
+                <div class="mermaid">
+                    graph LR
+                    step8(Monitoring) -.-> step8_1(>>>)
+                    subgraph Infrastructure Monitoring
+                        step8_1 -.-> step8_1_1(Nagios)
+                        step8_1 -.-> step8_1_2(Icinga)
+                        step8_1 -.-> step8_1_3(Datadog)
+                        step8_1 -.-> step8_1_4(Zabbix)
+                        step8_1 -.-> step8_1_5(Monit)
+                    end
+                    step8 -.-> step8_2(>>>)
+                    subgraph Application Monitoring
+                        step8_2 -.-> step8_2_1(AppDynamics)
+                        step8_2 -.-> step8_2_2(New Relic)                   
+                    end
+                    step8 -.-> step8_3(>>>)
+                    subgraph Log Monitoring
+                        step8_3 -.-> step8_3_1(ELK Stack)
+                        step8_3 -.-> step8_3_2(Graylog)
+                        step8_3 -.-> step8_3_3(Splunk)
+                        step8_3 -.-> step8_3_4(Papertrail)
+                    end
+                </div>
+            </details>
+            <details>
+                <summary><span>9</span> Cloud Provider</summary>
+                <div class="mermaid">
+                    graph LR
+                    step9(Cloud Provider) -.-> step9_1(AWS)
+                    step9 -.-> step9_2(Google Cloud)
+                    step9 -.-> step9_3(Azure)
+                    step9 -.-> step9_4(Digital Ocean)
+                    step9 -.-> step9_5(Heroku)
+                    step9 --> endPoint(Keep Exploring)
+                </div>
+            </details>
+        </details>
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
@@ -24,5 +183,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="{% static 'js/mermaid.min.js' %}"></script>
+        <script src="{% static 'js/roadmap.js' %}"></script>
     </body>
 </html>
