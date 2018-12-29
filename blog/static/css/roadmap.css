@@ -1,50 +1,73 @@
-rect {
-    fill: #fff !important;
-    stroke: none !important;
+#roadmap {
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
-svg {
-    height: auto !important;
+#roadmap .title {
+    padding: 12px;
+    font-size: 14pt;
 }
-svg:not(:root) {
-    overflow: visible;
+#roadmap .section {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
-foreignObject div {
-    background-color: #ff9400;
-    padding: 5px 4px;
-    border-radius: 5px;
-    margin-top: -10px;
-    margin-left: -15px;
+#roadmap .block {
+    padding: 8px;
+    min-width: 50px;
+    max-width: 350px;
+    border: 3px solid #000;
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
 }
-foreignObject div:hover {
-    box-shadow: 1px 1px 2px 0px #888;
-    background-color: #ffd844;
-    cursor: pointer;
+#roadmap .main.block {
+    background-color: #000;
+    color: #fff;
+    font-size: 10pt;
+    margin: 0 auto;
 }
-.mermaid {
-    width: 100%;
+#roadmap .main.block .number {
+    width: 2px;
+    height: 2px;
+    font-size: 8pt;
+    margin-right: 4px;
+    padding: 9px;
+    border-radius: 100%;
+    background-color: #bf00fe;
 }
-.mermaid .label {
-    font-family: cursive !important;
+#roadmap .main.block .number span {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -3px;
 }
-.edgePath .path {
-    stroke: #000 !important;
+#roadmap .side.block {
+    color: #000;
+    font-size: 8pt;
+    margin: 4px 4px;
 }
-g.cluster rect {
-    fill: #ccc !important;
-    stroke: none !important;;
+#roadmap .section .left  {
+    top: 0;
+    left: 0;
 }
-.arrowheadPath {
-    fill: #000 !important;
+#roadmap .section .right  {
+    top: 0;
+    right: 0;
 }
-#endPoint {
-    font-size: 20px;
+
+.flex-vertical {
+    display: flex;
+    flex-flow: column;
+    background: #ccc;
+    margin: 10px;
+    padding: 2px;
+    border: 2px dashed #000000;
 }
-/*#startPoint rect, #endPoint rect {
-    fill: none;
+.flex-horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
-[id^=step] rect {
-    fill: #ff9400 !important;
-}
-[id^=step] .label {
-    color: #fff !important;
-}*/
