@@ -30,6 +30,11 @@ footer .social-media a img {
     filter: invert(1);
 }
 
+.container {
+    min-height: 100%;
+    height: fit-content;
+}
+
 .date {
     color: #828282;
     margin-top: 20px;

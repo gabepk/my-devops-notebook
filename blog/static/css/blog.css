@@ -1,3 +1,8 @@
+body {
+    font-family: monospace;
+    letter-spacing: -0.2px;
+}
+
 header, footer {
     background-color: #ff9400;
     margin-top: 0;
@@ -28,6 +33,15 @@ footer .social-media a {
 
 footer .social-media a img {
     filter: invert(1);
+}
+
+.container {
+    min-height: 100%;
+    height: fit-content;
+}
+
+.fancy {
+    font-family: 'Lobster';
 }
 
 .date {

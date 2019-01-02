@@ -1,3 +1,7 @@
+#link-to-roadmap {
+    display: none;
+}
+
 #roadmap {
     text-align: center;
     padding: 20px;
@@ -46,13 +50,14 @@
 #roadmap .side.block {
     position: relative;
     color: #000;
-    font-size: 8pt;
+    font-size: 10pt;
     margin: 4px 4px;
     box-shadow: 2px 2px 5px 1px #555;
 }
 #roadmap .side.block a {
     color: #000000;
     text-decoration: none;
+    font-weight: bold;
 }
 #roadmap .side.block a:hover {
     color: #000000;
@@ -63,6 +68,7 @@
 }
 #roadmap .side.block span {
     cursor: default;
+    font-weight: bold;
 }
 #roadmap .side.linked.block:hover {
     box-shadow: none;
@@ -107,7 +113,7 @@
 }
 
 .bob-ross img {
-    height: 50%;
+    width: 100%;
     filter: brightness(1.3);
     border: 2px solid #000000;
     border-radius: 10px;

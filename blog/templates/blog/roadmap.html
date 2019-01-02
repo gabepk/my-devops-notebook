@@ -1,6 +1,10 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/roadmap.css' %}">
+{% endblock %}
+
 {% block content %}
     <div id="roadmap">
         <div class="section">
