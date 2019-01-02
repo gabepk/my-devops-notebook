@@ -1,25 +1,38 @@
-.page-header {
+header, footer {
     background-color: #ff9400;
     margin-top: 0;
+    color: #ffffff !important;
+    text-align: center;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+header h1 {
     font-size: 36pt;
-    text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
+footer {
+    width: 100%;
+    position: absolute;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+header a, header a:visited, header a:active,
+footer a, footer a:visited, footer a:active {
+    text-decoration: underline;
+    color: #ffffff !important;
+}
+
+footer .social-media a {
+    text-decoration: none !important;
+    padding: 0px 10px;
+}
+
+footer .social-media a img {
+    filter: invert(1);
 }
 
 .date {
     color: #828282;
+    margin-top: 20px;
 }
 
 .save {

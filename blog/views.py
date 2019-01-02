@@ -5,6 +5,10 @@ from django.utils import timezone
 from .forms import PostForm
 from .models import Post
 
+def render_roadmap(request):
+    return render(request, 'blog/roadmap.html', {})
+
+
 def post_list(request):
     """ Mostra todos os posts com data de publicacao nao vazia """
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

@@ -1,0 +1,395 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div id="roadmap">
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>1</span></div>
+                Learn a Programming Language
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>Java</span>
+                    </div>
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="background: #ea9999" class="side block">
+                        <span>Python</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>2</span></div>
+                Understand different OS Concepts
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>Process Management</span>
+                        <!-- systemctl on Linux and Windows Porcesses-->
+                    </div>
+                    <div style="background: #ffffbb" class="side block">
+                        <span>Threads and Concurrency</span>
+                        <!-- JS: sync and async processes -->
+                    </div>
+                    <div style="background: #ffffbb" class="side block">
+                        <span>Sockets</span>
+                        <!-- Communication endpointbetween app and transport layer -->
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>I/O Management</span>
+                        <!-- Java: (In/Out)putStream -->
+                    </div>
+                    <div style="background: #ffffbb" class="side block">
+                        <span>Vistualization</span>
+                        <!-- Concepts -->
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Memory/Storage</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>File System</span>
+                        <!-- Windows vs. Linux -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>3</span></div>
+                <div>
+                    Learn about Managins Servers
+                    <br />
+                    <small>
+                        Get some administration in some OS. Especially 
+                        any Linux distribution. Pick Ubuntu if you have 
+                        a little to no experience with Linux.
+                    </small>
+                </div>
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div class="flex-vertical">
+                        <div style="background: #38761d" class="side block">
+                            <span>OS</span>
+                        </div>
+                        <div class="flex-horizontal">
+                            <div style="background: #38761d" class="side block">
+                                <span>Linux</span>
+                            </div>
+                            <div style="background: #b6d7a8" class="side block">
+                                <span>Windows</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: #38761d" class="side block">
+                        <span>Vim / PowerShell</span>
+                    </div>
+                    <div style="background: #ffff00" class="side block">
+                        <span>
+                            Compiling from source <br /><small>gcc, make, mvn, etc</small>
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="flex-vertical">
+                        <span>Learn Bash Scripting</span>
+                        <div class="flex-horizontal">
+                            <div style="background: #ffffbb" class="side block">
+                                <span>Text Manipulation tools <br/><small>awk, sed, grep, sort, uniq, fmt, tr</small></span>
+                            </div>
+                            <div style="background: #ffffbb" class="side block">
+                                <span>Process Monitoring <br/><small>ps, atop, lsof, top, htop</small></span>
+                            </div>
+                        </div>
+                        <div class="flex-horizontal">
+                            <div style="background: #ffffbb" class="side block">
+                                <span>System Performance <br/><small>nmon, iostat, sar, vmstat</small></span>
+                            </div>
+                            <div style="background: #ffffbb" class="side block">
+                                <span>Others <br/><small> strace, dtrace, systemtap, uname, df, history</small></span>
+                            </div>
+                        </div>
+                        <div class="flex-horizontal">
+                            <div style="background: #ffffbb" class="side block">
+                                <span>Network <br/><small>nmap, tcpdump, mtr, ping, traceroute, airmon, airodump, dig, iptables</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>4</span></div>
+                Networking and Security
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #ffffbb" class="side block">
+                        <span>DNS</span>
+                    </div>
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>OSI Model</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>HTTP</span>
+                    </div>
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>HTTPS</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>FTP</span>
+                    </div>
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>SSL/TLS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>5</span></div>
+                What is and how to setup a ________
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #cf0a2c" class="side linked block">
+                        <div class="tag"></div>
+                        <a href="/post/4">Reverse Proxy</a>
+                    </div>
+                    <div style="background: #cf0a2c" class="side linked block">
+                        <div class="tag"></div>
+                        <a href="/post/5">Forward Proxy</a>
+                    </div>
+                    <div style="background: #cf0a2c" class="side linked block">
+                        <div class="tag"></div>
+                        <a href="/post/6">Caching Server</a>
+                    </div>
+                    <div style="background: #cf0a2c" class="side linked block">
+                        <div class="tag"></div>
+                        <a href="/post/7">Load Balancer</a>
+                    </div>
+                    <div style="background: #cf0a2c" class="side linked block">
+                        <div class="tag"></div>
+                        <a href="/post/8">Firewall</a>
+                    </div>
+                </div>
+                <div class="right flex-vertical">
+                    <span>Web Server</span>
+                    <div class="flex-horizontal">
+                        <div style="background: #ea9999" class="side block">
+                            <span>IIS</span>
+                        </div>
+                        <div style="background: #cf0a2c" class="side block">
+                            <span>Apache</span>
+                        </div>
+                    </div>
+                    <div class="flex-horizontal">
+                        <div style="background: #cf0a2c" class="side block">
+                            <span>Nginx</span>
+                        </div>
+                        <div style="background: #b6d7a8" class="side block">
+                            <span>Tomcat</span>
+                        </div>
+                    </div>    
+                    <div class="flex-horizontal">
+                        <div style="background: #ea9999" class="side block">
+                            <span>Caddy Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>6</span></div>
+                Learn Infrastructure as Code
+            </div>
+            <div class="flex-horizontal">
+                <div class="left flex-vertical">
+                    <span>Containers</span>
+                    <div class="flex-horizontal">
+                        <div style="background: #cf0a2c" class="side block">
+                            <span>Docker</span>
+                        </div>
+                        <div style="background: #ea9999" class="side block">
+                            <span>rkt</span>
+                        </div>
+                    </div>
+                    <div class="flex-horizontal">
+                        <div style="background: #ea9999" class="side block">
+                            <span>LXC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="flex-vertical">
+                        <span>Configuration Management</span>
+                        <div class="flex-horizontal">
+                            <div style="background: #cf0a2c" class="side block">
+                                <span>Ansiable</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>Salt</span>
+                            </div>
+                        </div>
+                        <div class="flex-horizontal">
+                            <div style="background: #ea9999" class="side block">
+                                <span>Chef</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>Puppet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-vertical">
+                        <span>Infrastructure Provisioning</span>
+                        <div class="flex-horizontal">
+                            <div style="background: #cf0a2c" class="side block">
+                                <span>Terraform</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>Could Formation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>7</span></div>
+                Learn some CI/DI Tools
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #38761d" class="side block">
+                        <span>Jenkins</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Travis CI</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="background: #cf0a2c" class="side block">
+                        <span>Teamcity</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Drone</span>
+                    </div>
+                    <div style="background: #cf0a2c" class="side block">
+                        <span>Circle CI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>8</span></div>
+                Learn how to monitor software and infrastructure
+            </div>
+            <div class="flex-horizontal">
+                <div class="left flex-vertical">
+                    <span>Logs Management</span>
+                    <div class="flex-horizontal">
+                        <div style="background: #ea9999" class="side block">
+                            <span>ELK Stack</span>
+                        </div>
+                        <div style="background: #ea9999" class="side block">
+                            <span>Graylog</span>
+                        </div>
+                    </div>
+                    <div class="flex-horizontal">
+                        <div style="background: #ea9999" class="side block">
+                            <span>Splunk</span>
+                        </div>
+                        <div style="background: #ea9999" class="side block">
+                            <span>Papertrail</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="flex-vertical">
+                        <span>Infrastructure Monitoring</span>
+                        <div class="flex-horizontal">
+                            <div style="background: #ea9999" class="side block">
+                                <span>Nagios</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>Icinga</span>
+                            </div>
+                        </div>
+                        <div class="flex-horizontal">
+                            <div style="background: #ea9999" class="side block">
+                                <span>Datadog</span>
+                            </div>
+                            <div style="background: #b6d7a8" class="side block">
+                                <span>Zabbix</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>Monit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-vertical">
+                        <span>Application Monitoring</span>
+                        <div class="flex-horizontal">
+                            <div style="background: #ea9999" class="side block">
+                                <span>AppDynamics</span>
+                            </div>
+                            <div style="background: #ea9999" class="side block">
+                                <span>New Relic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main block">
+                <div class="number"><span>9</span></div>
+                Cloud Providers
+            </div>
+            <div class="flex-horizontal">
+                <div class="left">
+                    <div style="background: #cf0a2c" class="side block">
+                        <span>AWS</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Google Cloud</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="background: #ea9999" class="side block">
+                        <span>Azure</span>
+                    </div>
+                    <div style="background: #ea9999" class="side block">
+                        <span>Digital Ocean</span>
+                    </div>
+                    <div style="background: #b6d7a8" class="side block">
+                        <span>Heroku</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bob-ross">
+        <img src="{% static 'img/as-long-as.png' %}" alt="Bob Ross - As long as you're learning, you're not failing">
+    </div>
+{% endblock %}
