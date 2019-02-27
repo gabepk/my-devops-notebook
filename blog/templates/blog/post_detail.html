@@ -8,6 +8,8 @@
             </div>
         {% endif %}
         <h1 class="fancy">{{ post.title }}</h1>
-        <p>{{post.text|linebreaksbr }}</p>
+        <article>
+            {{post.text|safe }}
+        </article>
     </div>
 {% endblock %}

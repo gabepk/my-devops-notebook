@@ -6,6 +6,26 @@ Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/READM
 
 <sub>Este blog foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
 
+## Como executar
+
+### Linux
+
+``` console
+$ python3 -m venv venv
+$ source venv/bin/activate
+(venv) $ pip install -r requirements.txt
+(venv) $ python manage.py runserver
+```
+
+### Windows 
+
+``` console
+$ virtualenv venv
+$ venv\Scripts\activate
+(venv) $ pip install -r requirements.txt
+(venv) $ python manage.py runserver
+```
+
 ## DevOps Roadmap 2019
 
 O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
