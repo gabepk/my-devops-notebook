@@ -1,2 +1,2 @@
-release: python manage.py makemigrations & python manage.py migrate --settings=mysite.settings & python manage.py collectstatic
+release: python manage.py makemigrations & python manage.py migrate --settings=mysite.settings & python manage.py collectstatic --clear
 web: gunicorn mysite.wsgi --log-file -
