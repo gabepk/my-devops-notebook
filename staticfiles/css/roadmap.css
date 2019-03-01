@@ -1,0 +1,120 @@
+#link-to-roadmap {
+    display: none;
+}
+
+#roadmap {
+    text-align: center;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+#roadmap .title {
+    padding: 12px;
+    font-size: 14pt;
+}
+#roadmap .section {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+#roadmap .block {
+    padding: 8px;
+    min-width: 50px;
+    max-width: 350px;
+    border: 3px solid #000;
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#roadmap .main.block {
+    background-color: #000;
+    color: #fff;
+    font-size: 10pt;
+    margin: 0 auto;
+}
+#roadmap .main.block .number {
+    width: 2px;
+    height: 2px;
+    font-size: 8pt;
+    margin-right: 4px;
+    padding: 9px;
+    border-radius: 100%;
+    background-color: #bf00fe;
+}
+#roadmap .main.block .number span {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -3px;
+}
+#roadmap .side.block {
+    position: relative;
+    color: #000;
+    font-size: 10pt;
+    margin: 4px 4px;
+    box-shadow: 2px 2px 5px 1px #555;
+}
+#roadmap .side.block a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+#roadmap .side.block a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+#roadmap .side.block a:focus {
+    outline: none;
+}
+#roadmap .side.block span {
+    cursor: default;
+    font-weight: bold;
+}
+#roadmap .side.linked.block:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+#roadmap .side.linked.block .tag {
+    position: absolute;
+    top: 5px;
+    left: -13px;
+    border-left: 20px solid #000000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+#roadmap .section .left  {
+    top: 0;
+    left: 0;
+}
+#roadmap .section .right  {
+    top: 0;
+    right: 0;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-flow: column;
+    background: #ccc;
+    margin: 10px;
+    padding: 2px;
+    border: 2px dashed #000000;
+    height: fit-content;
+}
+.flex-horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.bob-ross {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.bob-ross img {
+    width: 100%;
+    filter: brightness(1.3);
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
