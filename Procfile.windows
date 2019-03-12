@@ -1,2 +1,2 @@
-release: python manage.py makemigrations & python manage.py migrate --settings=mysite.settings & python manage.py collectstatic
+release: python manage.py makemigrations & python manage.py migrate --settings=mysite.settings
 web: python manage.py runserver 0.0.0.0:5000
