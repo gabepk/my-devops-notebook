@@ -1,0 +1,42 @@
+<p>Caching Server is a server that contains frequently-accessed data (documents, imagens, articles) available to the clients. It decreases the number of requests to the backend servers and improves performance of the distributes system.</p>
+
+<p>A good cache server has more <strong>cache hit</strong>&nbsp;than cache miss.</p>
+
+<div style="overflow-x:auto"><img alt="" src="https://docs.trafficserver.apache.org/en/latest/_images/cache_hit.jpg" style="float: left; width: 422px; height: 220px; border-width: 1px; border-style: solid; margin: 10px;" /></div>
+
+<div style="overflow-x:auto"><img alt="" src="https://docs.trafficserver.apache.org/en/latest/_images/cache_miss.jpg" style="width: 518px; height: 250px; border-width: 1px; border-style: solid; margin: 10px;" /></div>
+
+<p>&nbsp;</p>
+
+<p>As an example, Apache has a web&nbsp;proxy caching called <strong>Traffic Server</strong>. It serves cached data based on the headers of the requests, freshness of data, flags configured on the server, an so on. Examples:</p>
+
+<ul>
+	<li>It determines if an HTTP object is fresh checking the <strong>Expires</strong>&nbsp;or&nbsp;<strong>max-age</strong> headers.</li>
+	<li>as</li>
+	<li>To control the freshness of a data, the following variables must be edited on the file records.config:&nbsp;
+	<pre>
+<code class="language-bash">proxy.config.http.cache.heuristic_min_lifetime
+proxy.config.http.cache.heuristic_max_lifetime</code></pre>
+	</li>
+</ul>
+
+<ul>
+	<li>It supports the HTTP PUSH method to deliver content directly into the cache without client requests.</li>
+</ul>
+
+<h3><span style="color:#f39c12;"><strong>Global Cache</strong></span></h3>
+
+<p>// TODO&nbsp;<a href="http://aosabook.org/en/distsys.html">http://aosabook.org/en/distsys.html</a></p>
+
+<h3><span style="color:#f39c12;"><strong>Distributed Cache</strong></span></h3>
+
+<p>// TODO&nbsp;<a href="http://aosabook.org/en/distsys.html">http://aosabook.org/en/distsys.html</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+<p>References</p>
+
+<ol>
+	<li><a href="https://docs.trafficserver.apache.org/en/latest/admin-guide/configuration/cache-basics.en.html">Apache, HTTP&nbsp;Proxy Caching</a></li>
+</ol>

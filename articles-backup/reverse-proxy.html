@@ -1,0 +1,37 @@
+<h3><strong><span style="color:#f39c12;">What is proxy?&nbsp;</span></strong></h3>
+
+<p>n law, a proxy (in protuguese, Procura&ccedil;&atilde;o), is an authorization document that allows that someone can take legal/official decisions as agent of another person. The main goal of a proxy server, in computer science, is to also to represent someone/something, which can be either the client or the server.</p>
+
+<p>A proxy is an intermediate level server (either hardware or software) that&nbsp;<strong>receives requests</strong> from a client, <strong>modifies it&nbsp;</strong>(add/remove headers, encrypt/decrypt message, compress/decompress message, etc) <strong>and&nbsp;delivers</strong> to the server.</p>
+
+<p><span style="color:#ffffff;"><span style="background-color:#e67e22; padding: 0px 5px">collapsed forward</span></span></p>
+
+<ul>
+	<li>Proxies&nbsp;have the capability to coordinate several requests, by join similar requests and deliver only one to the server. This optimizes the bandwidth traffic.</li>
+	<li>This can be used to forward requests from servers within the same distributed system to a commom database. It can join requests for the same data or data that are physically&nbsp;close.</li>
+	<li>One of the <strong>pitfalls</strong> is that in order to collapse several requests, the first request&nbsp;will have to wait <strong>x</strong>&nbsp;seconds for it&#39;s response, where <strong>x</strong>&nbsp;is the time to join the requests.</li>
+</ul>
+
+<h3><strong><span style="color:#f39c12;">What is a reverse proxy?&nbsp;</span></strong></h3>
+
+<p>A reverse proxy (aka gateway server) receives a request from a client, then it forward&nbsp;the request to one of several backend servers.</p>
+
+<p>In Apache, a server can be configured as a reverse proxy instead of a basic web server. The <strong>ProxyPass</strong> directive specifies the mapping of incoming requests:</p>
+
+<pre>
+<code class="language-bash">ProxyPass "/" "http://www.example.com/"</code></pre>
+
+<p>The <strong>ProxyPassReverse</strong> directive rewrites any URL that the backend server returns to the proxy, if it needs to. Therefore, any requests which start with &quot;/images/&quot; (whether it comes from the client or the backend server), will be proxied to &quot;example.com&quot;. <strong>Otherwise it will be handled locally </strong>(on the proxy server).</p>
+
+<pre>
+<code class="language-bash">ProxyPassReverse "/images/" "https://www.example.com/"</code></pre>
+
+<p>&nbsp;</p>
+
+<hr />
+<p><small>References</small></p>
+
+<ol>
+	<li><small><a href="http://aosabook.org/en/distsys.html">The Architecture of Open Source Applications, Volume II, Scalable Web Architectures and Distributes Systems</a></small></li>
+	<li><small><a href="https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html">Apache Documentation, Version 2.4, Reverse Proxy Guide</a></small></li>
+</ol>
