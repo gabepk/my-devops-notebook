@@ -2,7 +2,7 @@ Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/READM
 
 # Meu Blog DevOps
 
-[Blog](https://gabepk-blog.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
+[Blog](https://devops-notebook.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
 
 <sub>Este blog foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
 
@@ -31,6 +31,6 @@ $ venv\Scripts\activate
 O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
 Eu *forkei* este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento atual (Dezembro de 2018).
 
-![Mapa do DevOps](./staticfiles/img/devops.png)
+<img src="./blog/static/img/devops.png?raw=true" align="center" alt="DevOps Roadmap">
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
