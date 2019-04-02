@@ -1,10 +1,10 @@
 English/[Português](https://gitlab.com/gabepk.ape/django-blog/blob/master/README.pt.md)
 
-# My DevOps blog
+# My DevOps Notebook
 
-[Blog](https://devops-notebook.herokuapp.com) implemented in Django to serve as a repository to my notes on DevOps concepts and tools.
+[List of small articles](https://devops-notebook.herokuapp.com) implemented in Django to serve as a repository to my notes on DevOps concepts and tools.
 
-<sub>This blog was created at the [Django Girls](https://djangogirls.org/brasilia/) 2018 event, suported by the [PyLadies DF](http://df.pyladies.com/) organization :heart:</sub>
+<sub>This site was created at the [Django Girls](https://djangogirls.org/brasilia/) 2018 event, suported by the [PyLadies DF](http://df.pyladies.com/) organization :heart:</sub>
 
 ## How to Execute
 

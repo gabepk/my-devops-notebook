@@ -1,10 +1,10 @@
 Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/README.md)
 
-# Meu Blog DevOps
+# Meu Caderno DevOps
 
-[Blog](https://devops-notebook.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
+[Lista de anotações sobre DevOps](https://devops-notebook.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
 
-<sub>Este blog foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
+<sub>Este site foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
 
 ## Como executar
 
