@@ -1,4 +1,4 @@
-import Roadmap from './modules/roadmap.js';
+import ScrollAnima from './modules/scrollAnima.js';
 
-const roadmap = new Roadmap("#roadmap .section");
-roadmap.init();
+const scrollAnima = new ScrollAnima("#roadmap .section");
+scrollAnima.init();
