@@ -60,14 +60,15 @@
     font-size: 10pt;
     margin: 4px 4px;
 }
-#roadmap .side.block.has-article {
-    box-shadow: 2px 2px 5px 1px #555;
-}
+
 #roadmap .side.block a {
     padding: 8px;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
+    margin: 2px;
+    border: 2px dashed;
 }
 #roadmap .side.block a:hover {
     color: #000000;
@@ -81,17 +82,11 @@
     cursor: default;
     font-weight: bold;
 }
+#roadmap .side.linked.block {
+    box-shadow: 2px 2px 5px 1px #555;
+}
 #roadmap .side.linked.block:hover {
     box-shadow: none;
-    cursor: pointer;
-}
-#roadmap .side.linked.block .tag {
-    position: absolute;
-    top: 5px;
-    left: -13px;
-    border-left: 20px solid #000000;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
 }
 
 #roadmap .section .left  {
