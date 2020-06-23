@@ -3,6 +3,9 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/roadmap.css' %}">
+    {% if user.is_authenticated %}
+        <link rel="stylesheet" href="{% static 'css/roadmap_admin.css' %}">
+    {% endif %}
 {% endblock %}
 
 {% block content %}
@@ -415,4 +418,7 @@
     </div>
 
     <script type="module" src="{% static 'js/script.js' %}"></script>
+    {% if user.is_authenticated %}
+        <script type="module" src="{% static 'js/roadmap_admin.js' %}"></script>
+    {% endif %}
 {% endblock %}
