@@ -6,5 +6,5 @@ app_name = 'blog'
 
 urlpatterns = [
     path('', views.render_roadmap, name="roadmap"),
-    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/<slug:slug>/', views.post_detail, name='post_detail'),
 ]
