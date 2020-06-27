@@ -14,7 +14,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = RichTextUploadingField()
     slug = models.CharField(max_length=200, default="migrated-post")
-    color = models.ForeignKey("Color", default=0, on_delete=models.SET_DEFAULT)
+    color = models.ForeignKey("Color", on_delete=models.CASCADE)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(
         blank=True, null=True)
