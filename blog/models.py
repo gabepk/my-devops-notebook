@@ -3,7 +3,7 @@ from django.utils import timezone
 from ckeditor_uploader.fields import RichTextUploadingField
 
 class Color(models.Model):
-    color_name = models.CharField(max_length=20, default="Dark Red")
+    color_name = models.CharField(max_length=25, default="Dark Red")
     rgb = models.CharField(max_length=8, default="#cf0a2c")
 
     def __str__(self):
