@@ -9,6 +9,13 @@ class Color(models.Model):
     def __str__(self):
         return self.color_name
 
+class KnowledgeLevel(models.Model):
+    name = models.CharField(max_length=25, default="Very Low")
+    color = models.CharField(max_length=8, default="#cf0a2c")
+
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
