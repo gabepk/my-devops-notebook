@@ -5,6 +5,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class KnowledgeLevel(models.Model):
     name = models.CharField(max_length=25, default="Very Low")
     color = models.CharField(max_length=8, default="#cf0a2c")
+    knowledge_level_id = models.IntegerField(default=0)
 
     def __str__(self):
         return self.name
