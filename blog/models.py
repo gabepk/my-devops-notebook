@@ -14,7 +14,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = RichTextUploadingField()
     slug = models.CharField(max_length=200, default="migrated-post")
-    #knowledge_level = models.ForeignKey("KnowledgeLevel", blank=True, null=True, default=1, on_delete=models.CASCADE)
+    knowledge_level = models.ForeignKey("KnowledgeLevel", blank=True, null=True, default=1, on_delete=models.CASCADE)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(
         blank=True, null=True)
