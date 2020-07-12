@@ -11,5 +11,8 @@
         <article>
             {{post.text|safe }}
         </article>
+        {% if user.is_authenticated %}
+            <a class="button edit" href="/admin/blog/post/{{post.id}}/change">Editar</a>
+        {% endif %}
     </div>
 {% endblock %}

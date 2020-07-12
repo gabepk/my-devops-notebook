@@ -72,6 +72,25 @@ footer .social-media a img {
     color: #000000;
 }
 
+.post a.button.edit{
+    background-color: #f5b966;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: 50px 0px 0px 0px;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.post article {
+    margin-bottom: 50px;
+}
+
 #link-to-login {
     right: 0;
     text-decoration: none;
