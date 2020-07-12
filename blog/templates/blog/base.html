@@ -15,7 +15,11 @@
         <header>
             <h1 class="fancy">My DevOps Notebook</h1>
             <a id="link-to-roadmap" href="/">Roadmap</a>
-            <a id="link-to-login" href="/admin"><i class="material-icons">login</i></a>
+            {% if user.is_authenticated %}
+                <a id="link-to-login" href="/admin/logout"><i class="material-icons">logout</i></a>
+            {% else %}
+                <a id="link-to-login" href="/admin/login"><i class="material-icons">login</i></a>
+            {% endif %}
         </header>
 
         <div class="content container">

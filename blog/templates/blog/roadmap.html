@@ -498,6 +498,8 @@
 
     <script type="module" src="{% static 'js/script.js' %}"></script>
     {% if user.is_authenticated %}
-        <script type="module" src="{% static 'js/roadmap_admin.js' %}"></script>
+        <script type="module" src="{% static 'js/admin_actions.js' %}"></script>
+    {% else %}
+        <script type="module" src="{% static 'js/actions.js' %}"></script>
     {% endif %}
 {% endblock %}

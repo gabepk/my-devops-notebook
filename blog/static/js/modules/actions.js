@@ -1,7 +1,7 @@
 import Post from './post.js';
 import Block from './block.js';
 
-export default class AdminActions {
+export default class Actions {
   constructor(query) {
     // Initialize list of posts
     this.posts = document.querySelector("#posts").children;
@@ -17,8 +17,7 @@ export default class AdminActions {
     this.blocks = Array.from(this.blocks).map(block => {
         this.slug = block.id;
         this.postLink = block.querySelector("a");
-        this.addButton = block.querySelector("div");
-        return new Block(this.slug, this.postLink, this.addButton, "0");
+        return new Block(this.slug, this.postLink);
     });
   }
 
@@ -29,9 +28,6 @@ export default class AdminActions {
         block.postLink.parentElement.classList.add("linked");
         block.postLink.parentElement.style.backgroundColor = 
           this.posts.filter(post => post.slug == block.slug)[0].color;
-      } else {
-        block.addButton.onclick = () => 
-          window.location.href = "/admin/blog/post/add?author=1&slug=" + block.slug;
       }
     });
   }

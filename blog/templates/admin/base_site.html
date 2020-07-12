@@ -1,5 +1,8 @@
 {% extends "admin/base_site.html" %}
 {% block extrahead %}
+
+    <a id="goToRoadmap" href="/"> GO TO ROADMAP </a>
+
     <style>
         body {
             font-family: monospace;
@@ -15,6 +18,16 @@
         #content #changelist-filter h2,
         #container .breadcrumbs {
             background-color: #f5b966;
+        }
+
+        #goToRoadmap {
+            background-color: #ff9400;
+            color: #ffffff;
+            margin: 0px;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+            padding: 10px 0px;
         }
     </style>
 {% endblock %}
