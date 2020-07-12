@@ -68,7 +68,7 @@
     font-weight: bold;
     width: 100%;
     margin: 2px;
-    border: 2px dashed;
+    cursor: default;
 }
 #roadmap .side.block a:hover {
     color: #000000;
@@ -87,6 +87,9 @@
 }
 #roadmap .side.linked.block:hover {
     box-shadow: none;
+}
+#roadmap .side.linked.block a {
+    cursor: pointer;
 }
 
 #roadmap .section .left  {

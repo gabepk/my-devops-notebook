@@ -6,11 +6,10 @@ from .forms import PostForm
 from .models import Post
 
 def render_roadmap(request):
+    posts = []
     if request.user.is_authenticated:
-        print("Logged in")
-    else:
-        print("Not logged in")
-    return render(request, 'blog/roadmap.html', {})
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/roadmap.html', {'posts':posts})
 
 def post_list(request):
     """ Mostra todos os posts com data de publicacao nao vazia """
