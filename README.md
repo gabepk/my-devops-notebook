@@ -1,4 +1,4 @@
-English/[Português](https://gitlab.com/gabepk.ape/django-blog/blob/master/README.pt.md)
+English/[Português](https://github.com/gabepk/my-devops-notebook/blob/master/README.pt.md)
 
 # My DevOps Notebook
 
