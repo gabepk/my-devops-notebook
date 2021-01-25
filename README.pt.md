@@ -1,4 +1,4 @@
-Português/[English](https://gitlab.com/gabepk.ape/django-blog/blob/master/README.md)
+Português/[English](https://github.com/gabepk/my-devops-notebook/blob/master/README.md)
 
 # Meu Caderno DevOps
 
