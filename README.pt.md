@@ -29,7 +29,7 @@ $ venv\Scripts\activate
 ## DevOps Roadmap 2019
 
 O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
-Eu *forkei* este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento atual (Dezembro de 2018).
+Eu *forkei* este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento de Dezembro de 2018.
 
 <img src="./blog/static/img/devops.png?raw=true" align="center" alt="DevOps Roadmap">
 
