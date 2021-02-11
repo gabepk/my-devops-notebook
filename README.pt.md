@@ -10,16 +10,17 @@ Português/[English](https://github.com/gabepk/my-devops-notebook/blob/master/RE
 
 ### Linux
 
-``` console
+```console
 $ python3 -m venv venv
 $ source venv/bin/activate
+(venv) $ env LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" pip --no-cache install psycopg2
 (venv) $ pip install -r requirements.txt
 (venv) $ python manage.py runserver
 ```
 
-### Windows 
+### Windows
 
-``` console
+```console
 $ virtualenv venv
 $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
@@ -29,7 +30,7 @@ $ venv\Scripts\activate
 ## DevOps Roadmap 2019
 
 O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
-Eu *forkei* este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento de Dezembro de 2018.
+Eu _forkei_ este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento de Dezembro de 2018.
 
 <img src="./blog/static/img/devops.png?raw=true" align="center" alt="DevOps Roadmap">
 
