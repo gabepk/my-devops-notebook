@@ -6,6 +6,8 @@ Português/[English](https://github.com/gabepk/my-devops-notebook/blob/master/RE
 
 <sub>Este site foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
 
+Eu _forkei_ este roadmap do [repositório do Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento.
+
 ## Como executar
 
 ### Linux
@@ -26,12 +28,3 @@ $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
 (venv) $ python manage.py runserver
 ```
-
-## DevOps Roadmap 2019
-
-O gráfico abaixo é um roteiro para apresentar o DevOps à minha equipe de desenvolvimento, demonstrando os caminhos que podemos seguir e as tecnologias que podemos de aprender para adotar devops.
-Eu _forkei_ este gráfico (um projeto [Balsamiq](https://balsamiq.com/)) de [Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento de Dezembro de 2018.
-
-<img src="./blog/static/img/devops.png?raw=true" align="center" alt="DevOps Roadmap">
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
