@@ -2,11 +2,9 @@ Português/[English](https://github.com/gabepk/my-devops-notebook/blob/master/RE
 
 # Meu Caderno DevOps
 
-[Lista de anotações sobre DevOps](https://devops-notebook.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps.
+[Lista de anotações sobre DevOps](https://devops-notebook.herokuapp.com) implementado no Django para servir como um repositório para minhas anotações sobre conceitos e ferramentas de DevOps. Eu _forkei_ este roadmap do [repositório do Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento.
 
-<sub>Este site foi criado no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart: </sub>
-
-Eu _forkei_ este roadmap do [repositório do Kamran Ahmedse](https://github.com/kamranahmedse/developer-roadmap) e modelei de acordo com meu conhecimento.
+Este site foi criado originalmente no evento [Django Girls](https://djangogirls.org/brasilia/) 2018, apoiado pelas [PyLadies DF](http://df.pyladies.com/):heart:
 
 ## Como executar
 
