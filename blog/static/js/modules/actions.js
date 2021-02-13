@@ -7,8 +7,8 @@ export default class Actions {
     this.posts = document.querySelector('#posts').children;
     this.posts = Array.from(this.posts).map((post) => {
       this.slug = post.querySelector('#slug').textContent;
-      this.color = post.querySelector('#color').textContent;
-      return new Post(this.slug, this.color);
+      this.name = post.querySelector('#name').textContent;
+      return new Post(this.slug, this.name);
     });
 
     // Get all blocks from the roadmap
@@ -25,6 +25,7 @@ export default class Actions {
       if (this.posts.map((post) => post.slug).includes(block.slug)) {
         block.postLink.href = '/post/' + block.slug;
         block.postLink.parentElement.classList.value = 'side block linked';
+        console.log(this.posts);
         block.postLink.parentElement.classList.add(
           this.posts.filter((post) => post.slug == block.slug)[0].name,
         );

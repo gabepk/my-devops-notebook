@@ -24,6 +24,11 @@ footer {
 
 header h1 {
   font-size: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
 }
 
 footer {
@@ -121,6 +126,10 @@ footer .social-media a img {
 
 .post article {
   margin-bottom: 50px;
+}
+
+.post article p {
+  font-family: fantasy;
 }
 
 #link-to-login {
