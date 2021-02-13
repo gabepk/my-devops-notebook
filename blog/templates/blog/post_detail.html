@@ -1,18 +1,18 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date"> 
-                publicado em {{post.published_date}}
-            </div>
-        {% endif %}
-        <h1 class="fancy">{{ post.title }}</h1>
-        <article>
-            {{post.text|safe }}
-        </article>
-        {% if user.is_authenticated %}
-            <a class="button edit" href="/admin/blog/post/{{post.id}}/change">Editar</a>
-        {% endif %}
+<div class="post">
+    {% if post.published_date %}
+    <div class="date">
+        publicado em {{post.published_date}}
     </div>
+    {% endif %}
+    <h1 class="fancy">{{ post.title }}</h1>
+    <article>
+        {{post.text|safe }}
+    </article>
+    {% if user.is_authenticated %}
+    <a class="button edit" href="/admin/blog/post/{{post.id}}/change">Editar</a>
+    {% endif %}
+</div>
 {% endblock %}

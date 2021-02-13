@@ -35,7 +35,7 @@
   color: #333;
   font-size: 2rem;
   margin: 0 auto;
-  padding: 4px;
+  padding-bottom: 10px;
   border-radius: 4px;
 }
 #roadmap .main.block .number {
@@ -44,7 +44,7 @@
 #roadmap .main.block .number span {
   border: 1px solid #333;
   border-radius: 45%;
-  padding: 0px 5px;
+  padding: 0px 8px;
 }
 #roadmap .side.block {
   position: relative;
@@ -74,14 +74,21 @@
   cursor: default;
   font-weight: bold;
 }
-#roadmap .side.linked.block {
-  box-shadow: 2px 2px 5px 1px #555;
+#roadmap .side.linked.block a::after {
+  content: '➞';
 }
 #roadmap .side.linked.block:hover {
-  box-shadow: none;
+  transform: translateX(10px);
+  animation: animeLinkedBlock 1s infinite;
 }
-#roadmap .side.linked.block a {
+#roadmap .side.linked.block {
   cursor: pointer;
+}
+
+@keyframes animeLinkedBlock {
+  to {
+    transform: translateX(0px);
+  }
 }
 
 #roadmap .section .left {
@@ -136,6 +143,7 @@
   margin: 10px;
   padding: 2px;
   border: 3px dashed #333;
+  border-radius: 15px;
   height: fit-content;
   color: #333;
 }

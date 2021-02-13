@@ -1,5 +1,5 @@
 body {
-  font-family: Bradley Hand, cursive;
+  font-family: 'Homemade Apple', cursive;
   letter-spacing: -0.2px;
   background-color: #ffffee;
   background-image: linear-gradient(
@@ -47,7 +47,7 @@ footer .social-media a {
 }
 
 footer .social-media a img {
-  filter: invert(1);
+  margin-bottom: 10px;
 }
 
 .container {
@@ -56,7 +56,19 @@ footer .social-media a img {
 }
 
 .fancy {
-  font-family: 'Lobster';
+  margin: 10px -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  width: fit-content;
+  background-image: linear-gradient(
+    to right,
+    #bf32c433,
+    #bb30addd 4%,
+    #ac35b744
+  );
 }
 
 .date {
@@ -83,6 +95,7 @@ footer .social-media a img {
 }
 
 .post {
+  margin-left: 85px;
   margin-bottom: 70px;
 }
 
