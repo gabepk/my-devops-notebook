@@ -6,6 +6,14 @@ English/[Português](https://github.com/gabepk/my-devops-notebook/blob/master/RE
 
 This site was originally created at the [Django Girls](https://djangogirls.org/brasilia/) 2018 event, suported by the [PyLadies DF](http://df.pyladies.com/) organization :heart:
 
+# Additional topics
+
+I added some additional topics to learn, all related to Amazon (my current Employer).
+
+- IAM - AWS Identity and Access Management
+- ECS - Amazon Elastic Container Service
+- CodePipeline - CI/DI tool
+
 ## How to Execute
 
 ### Linux

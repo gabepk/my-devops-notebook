@@ -4,10 +4,10 @@ body {
   background-color: #ffffee;
   background-image: linear-gradient(
       90deg,
-      transparent 79px,
-      #abced4 79px,
-      #abced4 81px,
-      transparent 81px
+      transparent 39px,
+      #abced4 39px,
+      #abced4 41px,
+      transparent 41px
     ),
     linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.5em;
@@ -100,7 +100,7 @@ footer .social-media a img {
 }
 
 .post {
-  margin-left: 85px;
+  margin-left: 45px;
   margin-bottom: 70px;
 }
 
@@ -110,25 +110,28 @@ footer .social-media a img {
 }
 
 .post a.button.edit {
-  background-color: #f5b966;
-  padding: 10px 15px;
-  border: none;
+  background-color: #ac35b7aa;
+  padding: 4px 12px;
+  border: 2px solid #ac35b7dd;
   border-radius: 4px;
-  color: #fff;
+  box-shadow: 3px 3px 0px 0px #ac35b7dd;
   cursor: pointer;
   margin: 50px 0px 0px 0px;
-  vertical-align: middle;
-  font-weight: normal;
-  font-size: 2.2rem;
   text-decoration: none;
   color: #fff;
+}
+
+.post a.button.edit:hover {
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .post article {
   margin-bottom: 50px;
 }
 
-.post article p {
+.post article p,
+.post article ul,
+.post article ol {
   font-family: fantasy;
 }
 
