@@ -45,6 +45,8 @@
   border: 1px solid #333;
   border-radius: 45%;
   padding: 0px 8px;
+  box-shadow: 1px 1px 0 2px #ac35b7aa;
+  text-shadow: 1px 1px #ac35b7aa;
 }
 #roadmap .side.block {
   position: relative;

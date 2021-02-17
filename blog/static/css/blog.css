@@ -1,6 +1,6 @@
 body {
   font-family: 'Homemade Apple', cursive;
-  letter-spacing: -0.2px;
+  letter-spacing: 1px;
   background-color: #ffffee;
   background-image: linear-gradient(
       90deg,
@@ -61,6 +61,8 @@ footer .social-media a img {
 }
 
 .fancy {
+  display: inline;
+  font-size: 2rem;
   margin: 10px -0.4em;
   padding: 0.1em 0.4em;
   border-radius: 0.8em 0.3em;
@@ -78,7 +80,7 @@ footer .social-media a img {
 
 .date {
   color: #828282;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 .save {
@@ -126,13 +128,13 @@ footer .social-media a img {
 }
 
 .post article {
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 
 .post article p,
 .post article ul,
 .post article ol {
-  font-family: fantasy;
+  font-family: cursive;
 }
 
 #link-to-login {

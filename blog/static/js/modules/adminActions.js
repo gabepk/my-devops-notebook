@@ -25,6 +25,7 @@ export default class AdminActions {
     Array.from(this.blocks).map((block) => {
       if (this.posts.map((post) => post.slug).includes(block.slug)) {
         block.postLink.href = '/post/' + block.slug;
+        block.postLink.parentElement.classList.remove('low', 'medium', 'high');
         block.postLink.parentElement.classList.add('linked');
         block.postLink.parentElement.classList.add(
           this.posts.filter((post) => post.slug == block.slug)[0].name,
