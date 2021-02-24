@@ -8,6 +8,22 @@
   max-width: 1500px;
   margin: 0 auto;
 }
+
+#roadmap div.knowledge-level {
+  margin-bottom: 6em;
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 1em;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+}
+
+#roadmap div.knowledge-level div {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
 #roadmap .title {
   padding: 12px;
   font-size: 2.2rem;

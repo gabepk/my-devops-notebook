@@ -134,7 +134,10 @@ footer .social-media a img {
 .post article p,
 .post article ul,
 .post article ol {
-  font-family: cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.75rem;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
 }
 
 #link-to-login {
